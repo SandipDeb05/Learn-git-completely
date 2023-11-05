@@ -8,3 +8,5 @@ let meetup = JSON.parse(str, (key, value) => {
 for (let key in meetup) {
   console.log(meetup[key]);
 }
+
+console.log(meetup);
