@@ -5,4 +5,6 @@ let meetup = JSON.parse(str, (key, value) => {
   return value;
 });
 
-console.log(meetup);
+for (let key in meetup) {
+  console.log(meetup[key]);
+}
