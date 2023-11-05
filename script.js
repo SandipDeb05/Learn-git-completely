@@ -6,7 +6,8 @@ let meetup = JSON.parse(str, (key, value) => {
 });
 
 for (let key in meetup) {
+  console.log("ip300");
   console.log(key, meetup[key]);
 }
 
-console.log(meetup, meetup["date"]);
+console.log(meetup, meetup["title"]);
