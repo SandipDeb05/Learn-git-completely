@@ -9,6 +9,4 @@ for (let key in meetup) {
   console.log(meetup[key]);
 }
 
-for (let item of Object.keys(meetup)) {
-  console.log(item);
-}
+console.log(meetup);
