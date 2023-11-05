@@ -9,4 +9,4 @@ for (let key in meetup) {
   console.log(meetup[key]);
 }
 
-console.log(meetup);
+console.log(meetup, meetup["date"]);
