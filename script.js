@@ -1,13 +1,17 @@
-let str = '{"title":"Conference","date":"2017-11-30T12:00:00.000Z"}';
+const user = {
+  firstname: "Sandip",
+  lastname: "Deb",
+};
 
-let meetup = JSON.parse(str, (key, value) => {
-  if (key === "date") return new Date(value);
-  return value;
+Object.defineProperty(user, "fullname", {
+  get() {
+    return user.firstname + " " + user.lastname;
+  },
+  set(value) {
+    [this.firstname, this.lastname] = value.split(" ");
+  },
 });
 
-for (let key in meetup) {
-  console.log("ip300");
-  console.log(key, meetup[key]);
-}
+user.fullname = "Gaurab Deb";
 
-console.log(meetup, meetup["title"]);
+console.log(user.fullname);
